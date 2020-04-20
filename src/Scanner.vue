@@ -92,7 +92,7 @@ export default {
             width: { min: this.readerSize.width },
             height: { min: this.readerSize.height },
             facingMode: 'environment',
-            aspectRatio: { min: 1, max: 2 },
+            aspectRatio: { min: this.aspectRatio.min, max: this.aspectRatio.max },
           },
         },
         locator: {

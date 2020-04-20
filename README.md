@@ -1,6 +1,6 @@
 ![](https://cdn-images-1.medium.com/max/1600/1*u5EN9YE4S2R7QbJ-rHOZpg.gif)
 
-# vue-quaggajs
+# vue-z-quaggajs
 
 [quaggajs](https://serratus.github.io/quaggaJS/) 's wrapper for Vue.js
 
@@ -9,7 +9,7 @@
 ## npm
 
 ``` bash
-npm i vue-quaggajs
+npm i vue-z-quaggajs
 ```
 
 # Basic Example
@@ -23,7 +23,7 @@ npm i vue-quaggajs
 
 <script>
 import Vue from 'vue'
-import VueQuagga from 'vue-quaggajs';
+import VueQuagga from 'vue-z-quaggajs';
 
 // register component 'v-quagga'
 Vue.use(VueQuagga);
