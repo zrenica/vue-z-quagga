@@ -128,3 +128,26 @@ default:
   max: 2,
 }
 ```
+### locate: Boolean
+
+Is its ability to locate a barcode in a given image.
+
+default:
+
+```js
+false
+```
+### area: Object
+
+The area prop restricts the decoding area of the image. The values are given in percentage, similar to the CSS style property when using position: absolute. This area is also useful in cases the locate property is set to false, defining the rectangle for the user.
+
+default:
+
+```js
+{
+        top: '30%',
+        right: '30%',
+        left: '30%',
+        bottom: '30%',
+}
+```

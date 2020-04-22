@@ -82,6 +82,19 @@ export default {
       }),
       validator: o => typeof o.min === 'number' && typeof o.max === 'number',
     },
+    locate: {
+      type: Boolean,
+      default: () => false,
+    },
+    area: {
+      type: Object,
+      default: () => ({
+        top: '30%',
+        right: '30%',
+        left: '30%',
+        bottom: '30%',
+      }),
+    },
   },
   data: function() {
     return {
@@ -92,7 +105,16 @@ export default {
             width: { min: this.readerSize.width },
             height: { min: this.readerSize.height },
             facingMode: 'environment',
-            aspectRatio: { min: this.aspectRatio.min, max: this.aspectRatio.max },
+            aspectRatio: {
+              min: this.aspectRatio.min,
+              max: this.aspectRatio.max,
+            },
+          },
+          area: {
+            top: this.area.top,
+            right: this.area.right,
+            left: this.area.left,
+            bottom: this.area.bottom,
           },
         },
         locator: {
@@ -104,7 +126,7 @@ export default {
         decoder: {
           readers: this.readerTypes,
         },
-        locate: true,
+        locate: this.locate,
       },
     };
   },
