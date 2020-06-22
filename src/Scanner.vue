@@ -38,7 +38,7 @@ export default {
               })
               .forEach(function(box) {
                 Quagga.ImageDebug.drawPath(box, { x: 0, y: 1 }, drawingCtx, {
-                  color: 'green',
+                  color: '#F00',
                   lineWidth: 3,
                 });
               });
@@ -61,7 +61,7 @@ export default {
               result.line,
               { x: 'x', y: 'y' },
               drawingCtx,
-              { color: 'red', lineWidth: 4 }
+              { color: '#FF0', lineWidth: 4 }
             );
           }
         }
